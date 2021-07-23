@@ -1,0 +1,75 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width= device-width, initial-scale=1">
+<title>JOURNAL</title>
+<link rel="stylesheet" type="text/css" href="style.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<header>
+<div class="w3-content w3-section" style="max-width:100%">
+  <img class="mySlides" src="image/b1.png">
+  <img class="mySlides" src="image/b2.png">
+  <img class="mySlides" src="image/b3.png.">
+</div>
+
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+</header>
+
+<div class="topnav">
+  <a class="active" href="index.html">Home</a>
+<a href="aboutme.html">About Me</a>
+  <a href="journal.html">Journal</a>
+  <a href="contact.html">Contact</a>
+<a href="register.html">Register</a>
+<a href="login.html">Log in</a>
+</div>
+
+<ol align="left">
+<li>Q: Who can access this journal?</li>
+<p>A: Everone can access this journal such as student, researcher and other.</p>
+<li>Q: If I not register can I still use this website?</li>
+<p>A: Yes, ofcourse user still can access the journal even not regsiter.</p>
+<li>Q: Did I have to pay to download the journal?</li>
+<p>A: Not, user did not have to pay to download the journal. It free for everyone to access and download the journal.</p>
+</ol>
+
+<footer><small>
+<p align="center"> 
+Copyright 2021 FPM, UiTM Puncak Perdana|
+last update 20 JULY 2021|
+recommended browser: Google Chrome </small> </footer>
+
+</body>
+</html>
+

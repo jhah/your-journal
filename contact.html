@@ -1,0 +1,124 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width= device-width, initial-scale=1">
+<title>JOURNAL</title>
+<link rel="stylesheet" type="text/css" href="style.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<header>
+<div class="w3-content w3-section" style="max-width:100%">
+  <img class="mySlides" src="image/b1.png">
+  <img class="mySlides" src="image/b2.png">
+  <img class="mySlides" src="image/b3.png.">
+</div>
+
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+</header>
+
+<div class="topnav">
+  <a class="active" href="index.html">Home</a>
+<a href="aboutme.html">About Me</a>
+  <a href="journal.html">Journal</a>
+  <a href="contact.html">Contact</a>
+<a href="register.html">Register</a>
+<a href="login.html">Log in</a>
+</div>
+
+
+<!-- Add font awesome icons -->
+<a href="https://www.facebook.com/OUPAcademic" class="fa fa-facebook"></a>
+<a href="http://twitter.com/oupacademic" class="fa fa-twitter"></a>
+<a href="https://www.linkedin.com/showcase/oup-academic" class="fa fa-linkedin"></a>
+<a href="http://www.youtube.com/playlist?list=PL3MAPgqN8JWioLLTkU4mlFM4-SNt-f1Xs" class="fa fa-youtube"></a>
+
+
+<div class="marquee">
+	<h2><marquee>FEEDBACK FORM</marquee></h2>
+</div>
+<p>Please fill this feedback form to improvise this website.</p>
+
+<div class="container">
+  <form action="/action_page.php">
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">First Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">Last Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="country">Country</label>
+      </div>
+      <div class="col-75">
+        <select id="country" name="country">
+        
+          <option value="malaysia">Malaysia</option>
+          
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="subject">Subject</label>
+      </div>
+      <div class="col-75">
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      </div>
+    </div>
+ <div class="row">
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+</div>
+
+
+
+<footer><small>
+<p align="center"> 
+Copyright 2021 FPM, UiTM Puncak Perdana|
+last update 20 JULY 2021|
+recommended browser: Google Chrome </small> </footer>
+
+</body>
+</html>

@@ -1,0 +1,108 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Corporate Website">
+  <meta name="keywords" content="corporate website">
+  <meta name="author" content="nurul najihah abu talib">
+<meta name="viewport" content="width= device-width, initial-scale=1">
+<title>JOURNAL</title>
+<link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body>
+
+<header>
+<div class="w3-content w3-section" style="max-width:100%">
+  <img class="mySlides" src="image/b1.png">
+  <img class="mySlides" src="image/b2.png">
+  <img class="mySlides" src="image/b3.png.">
+</div>
+
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+</header>
+
+
+<div class="topnav">
+  <a class="active" href="index.html">Home</a>
+<a href="aboutme.html">About Me</a>
+<a href="journal.html">Journal</a>
+<a href="contact.html">Contact</a>
+<a href="register.html">Register</a>
+<a href="login.html">Log in</a>
+  </div>
+
+
+<div class="marquee">
+	<h2><marquee>YOUR JOURNAL</marquee></h2>
+</div>
+
+<div class="row">
+  <div class="column">
+<b><a href="https://academic.oup.com/function">FUNCTION</a></b> 
+<br>
+<br>
+<img src="image/journal1.jpg" width="150" height="180"></div>
+
+<div class="column">
+<b><a href="https://academic.oup.com/genetics">GENETICS</a></b> 
+<br>
+<br>
+<img src="image/journal2.jpg" width="150" height="180"></div>
+
+<div class="column">
+<b><a href="https://academic.oup.com/ijpp">INTERNATIONAL JOURNAL OF PHARMACY PRACTICE</a></b> 
+<br>
+<br>
+<img src="image/journal3.jpg" width="150" height="180"></div>
+
+<div class="column">
+<b><a href="https://academic.oup.com/jaac">THE JOURNAL OF AESTHETICS & ART CRITICISM</a></b> 
+<br>
+<br>
+<img src="image/journal4.jpg" width="150" height="180"></div>
+
+<div class="column">
+<b><a href="https://academic.oup.com/ooms">OXFORD OPEN MATERIALS SCIENCE</a></b> 
+<br>
+<br>
+<img src="image/journal5.jpg" width="150" height="180"></div>
+
+<div class="column">
+<b><a href="https://academic.oup.com/plcell">THE PLANT CELL</a></b> 
+<br>
+<br>
+<img src="image/journal6.jpg" width="150" height="180">
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+
+<footer><small>
+<p align="center"> 
+Copyright 2021 FPM, UiTM Puncak Perdana|
+last update 20 JULY 2021|
+recommended browser: Google Chrome </small></footer>
+
+</body>
+</html>

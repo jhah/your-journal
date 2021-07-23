@@ -1,0 +1,126 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width= device-width, initial-scale=1">
+<title>JOURNAL</title>
+<link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body>
+
+<header>
+<div class="w3-content w3-section" style="max-width:100%">
+  <img class="mySlides" src="image/b1.png">
+  <img class="mySlides" src="image/b2.png">
+  <img class="mySlides" src="image/b3.png.">
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+</header>
+
+<div class="topnav">
+  <a class="active" href="index.html">Home</a>
+<a href="aboutme.html">About Me</a>
+  <a href="journal.html">Journal</a>
+<a href="contact.html">Contact</a>
+<a href="register.html">Register</a>
+<a href="login.html">Log in</a>
+    </form>
+  </div>
+</div>
+
+
+
+
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="image/logo.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+<br>
+<br>
+
+<div class="marquee">
+	<h2><marquee>FREQUESTLY ASKED QUESTION</marquee></h2>
+</div>
+
+<div class="dropdown">
+  <button class="dropbtn">FAQS</button>
+  <div class="dropdown-content">
+  <a href="question.html">Question</a>
+  <a href="thanks.html">FOR YOU</a>
+  </div>
+</div>
+
+
+
+<footer><small>
+<p align="center"> 
+Copyright 2021 FPM, UiTM Puncak Perdana|
+last update 20 JULY 2021|
+recommended browser: Google Chrome </small> </footer>
+
+</body>
+</html>

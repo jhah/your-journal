@@ -1,0 +1,76 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width= device-width, initial-scale=1">
+<title>JOURNAL</title>
+<link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body>
+
+<header>
+<div class="w3-content w3-section" style="max-width:100%">
+  <img class="mySlides" src="image/b1.png">
+  <img class="mySlides" src="image/b2.png">
+  <img class="mySlides" src="image/b3.png.">
+</div>
+
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+</header>
+
+<div class="topnav">
+  <a class="active" href="index.html">Home</a>
+<a href="aboutme.html">About Me</a>
+<a href="journal.html">Journal</a>
+<a href="contact.html">Contact</a>
+<a href="register.html">Register</a>
+<a href="login.html">Log in</a>
+  </div>
+
+
+<div class="marquee">
+	<h2><marquee>ABOUT ME</marquee></h2>
+</div>
+
+<div class="f">
+<ol align="left">
+<li>Title: YOUR JOURNAL</li>
+<li>Name: NURUL NAJIHAH BINTI ABU TALIB</li>
+<li>Student ID: 2021115049</li>
+<li>Group: IMS456 ELEKD</li>
+<li>Course code: IMS456 </li>
+<li>Course name: BASIC WEB DESIGN AND CONTENT MANAGEMENT</li>
+<li>Program code & mode: IM246 & FULL TIME</li>
+<li>Faculty: INFORMATION MANAGEMENT</li>
+<li>Submission date: 21 JULY</li>
+<li>Published URL:</li>
+<li>Your image:</li>
+<br>
+<img src="image/myself.jpg" width="20%" heigt="15%">
+</ol>
+
+<footer><small>
+<p align="center"> 
+Copyright 2021 FPM, UiTM Puncak Perdana|
+last update 20 JULY 2021|
+recommended browser: Google Chrome </small> </footer>
+
+
+
+</body>
+</html>

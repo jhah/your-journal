@@ -1,0 +1,166 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width= device-width, initial-scale=1">
+<title>JOURNAL</title>
+<link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body>
+
+<header>
+<div class="w3-content w3-section" style="max-width:100%">
+  <img class="mySlides" src="image/b1.png">
+  <img class="mySlides" src="image/b2.png">
+  <img class="mySlides" src="image/b3.png.">
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+</header>
+
+<div class="topnav">
+  <a class="active" href="index.html">Home</a>
+<a href="aboutme.html">About Me</a>
+  <a href="journal.html">Journal</a>
+<a href="contact.html">Contact</a>
+<a href="register.html">Register</a>
+<a href="login.html">Log in</a>
+  <div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</div>
+<br>
+
+
+<div class="marquee">
+	<h2><marquee>JOURNAL</marquee></h2>
+</div>
+
+
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <img src="image/issue1.jpeg" alt="Advance in Nutrition" style="width:300px;height:350px;vspace:50px">
+    </div>
+    <div class="flip-box-back">
+      <h2>Advance in Nutrition</h2>
+      <p>Volume 12, Issue 1</p>
+    </div>
+  </div>
+</div>
+
+<div class="main">
+ <h2>Perspective: Guidelines Needed for the Conduct of Human Nutrition Randomized Controlled Trials</h2>
+        <p>Advance in Nutrition Volume 12, Issue 1, January 2021, Pages 1-3
+<br>Connie M Weaver, Alice H Lichtenstein, Penny M Kris-Etherton</p>
+<a href='https://doi.org/10.1093/advances/nmaa083'>https://doi.org/10.1093/advances/nmaa083</a>
+<br>
+ <a href="article/v12i1.pdf" target="_blank" style="font-size:15px">Download PDF</a>
+ <hr class="solid">
+
+ 
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <img src="image/issue2.jpeg" alt="Advance in Nutrition" style="width:300px;height:350px;vspace:50px">
+    </div>
+    <div class="flip-box-back">
+      <h2>Advance in Nutrition</h2>
+      <p>Volume 12, Issue 2</p>
+    </div>
+  </div>
+</div>
+
+<div class="main">
+ <h2>Perspective: The Convergence of Coronavirus Disease 2019 (COVID-19) and Food Insecurity in the United State</h2>
+        <p>Advance in Nutrition Volume 12, Issue 3, March 2021, Pages 287-290
+<br>Connie M Weaver, Alice H Lichtenstein, Penny M Kris-Etherton<br>Published: 24 September 2020</p>
+<a href='https://doi.org/10.1093/advances/nmaa126'>https://doi.org/10.1093/advances/nmaa126</a>
+<br>
+ <a href="article/v12i2.pdf" target="_blank" style="font-size:15px">Download PDF</a>
+ <hr class="solid">
+
+
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <img src="image/v36i1.jpeg" alt="The World Bank Research Observer" style="width:300px;height:350px;vspace:50px">
+    </div>
+    <div class="flip-box-back">
+      <h2>The World Bank Research Observer</h2>
+      <p>Volume 34, Issue 1</p>
+    </div>
+  </div>
+</div>
+
+<div class="main">
+ <h2>Simulating the Potential Impacts of COVID-19 School Closures on Schooling and Learning Outcomes: A Set of Global Estimates </h2>
+        <p>The World Bank Research Observer, Volume 36, Issue 1, February 2021, Pages 1–40,
+<br>João Pedro Azevedo, Amer Hasan, Diana Goldemberg, Koen Geven, Syedah Aroob Iqbal</p>
+<a href='https://doi.org/10.1093/wbro/lkab003'>https://doi.org/10.1093/wbro/lkab003</a>
+<br>
+ <a href="article/v36i1.pdf" target="_blank" style="font-size:15px">Download PDF</a>
+ <hr class="solid">
+
+
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <img src="image/v34i1.jpeg" alt="The Review of Financial Studies" style="width:300px;height:350px;vspace:50px">
+    </div>
+    <div class="flip-box-back">
+      <h2>The Review of Financial Studies</h2>
+      <p>Volume 34, Issue 1</p>
+    </div>
+  </div>
+</div>
+
+<div class="main">
+ <h2>CAPM-Based Company (Mis)valuations</h2>
+        <p>Advance in Nutrition Volume 12, Issue 3, March 2021, Pages 287-290
+<br>Olivier Dessaint, Jacques Olivier, Clemens A Otto, David Thesmar<br>Published: 12 May 2020</p>
+<a href='https://doi.org/10.1093/rfs/hhaa049'>https://doi.org/10.1093/rfs/hhaa049</a>
+<br>
+ <a href="article/v34i1.pdf" target="_blank" style="font-size:15px">Download PDF</a>
+ <hr class="solid">
+
+
+
+<footer><small>
+<p align="center"> 
+Copyright 2021 FPM, UiTM Puncak Perdana|
+last update 20 JULY 2021|
+recommended browser: Google Chrome </small> </footer>
+ 
+
+</body>
+</html>
